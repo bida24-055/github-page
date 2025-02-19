@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
   }  
 header {
-    background-color: #4CAF50
+    background-color: #4CAF5O
     color: white;
   padding:20px:
   text-align: centre;
@@ -42,4 +42,22 @@ footer{
   positio: fixed;
   bottom: 0;
   width: 100%
+}
+p{
+  font-size: 1.1em;
+}
+a{
+  color: #4CAF5O;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+img{
+  border: 5px solid #4CAF5O;
+  border-radius: 10px;
+}
+main a[href="mailto:"]{
+  color: #ff5722;
+  font-weight: bold;
 }
