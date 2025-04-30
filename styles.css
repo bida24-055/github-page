@@ -1,8 +1,15 @@
 body {
-  font-family: Arial, sans-sarif;
-  color: #333;
-  background-color: Cadet Gray;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+margin: 0;
+padding: 0;
+background-image: url(mclaren-p1-exterior.jpg);
+background-size: cover;
+background-position: center;
+font-family: Arial,sans-serif;
+color: beige;
 }
+.navbar{
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+}
+
