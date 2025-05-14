@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-
-<html lang="eng">
-
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport content="width=device-width, initial-scale=1.0">
-<title>My First GitHub Page</title>
- <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Motors | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body>     
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<header>
-      
-<h1>Welcome to Apex Autos!</h1>
- <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
-  <a href="inventory.html">Inventory</a>
- </nav>
- <img src="images.jpeg" height="150" width="200">
-</header>
-<main>
+  <!-- Hero Section -->
+  <div class="hero" style="background: url('car-hero.jpg') center/cover no-repeat; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+    <div>
+      <h1 style="font-size: 3rem; background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">Find Your Dream Car at Elite Motors</h1>
+      <p style="margin-top: 10px; font-size: 1.2rem;">Premium vehicles. Exceptional service.</p>
+    </div>
+  </div>
 
-<p>This is a simple webpage hosted on GitHub Pages.</p>
-  <p>We offer the best exotic hypercars,sports cars and luxury cars</p>
+  <!-- Services Section -->
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px;">
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3>Wide Selection</h3>
+        <p>From luxury sedans to powerful SUVs, we have vehicles to match every need and budget.</p>
+      </div>
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3>Certified Pre-Owned</h3>
+        <p>Every used car we sell undergoes a rigorous inspection and certification process.</p>
+      </div>
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3>Trusted Experts</h3>
+        <p>Our friendly team of car experts is here to guide you through every step of your purchase.</p>
+      </div>
+    </div>
+  </div>
 
-<p>Here's a picture of a hypercar that might interest you:</p>
+  <!-- CTA Section -->
+  <div style="background-color: #273c75; color: white; text-align: center; padding: 40px 20px; margin-top: 40px;">
+    <h2>Ready to Take the Wheel?</h2>
+    <p>Browse our full inventory and schedule a test drive today!</p>
+    <a href="inventory.html" class="button" style="margin-top: 20px; display: inline-block; background: white; color: #273c75; padding: 12px 20px; border-radius: 6px; text-decoration: none;">View Inventory</a>
+  </div>
 
-<img src="2025-mclaren-w1.jpg" height="250" width="400">
-  <p>If you wish to veiw more options click on the button bellow</p>
-
-<p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
-
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Aobakwe Makuke</p>
-
-</footer>
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background: #000; color: #fff; margin-top: 30px;">
+    &copy; 2025 Elite Motors. All rights reserved.
+  </footer>
 
 </body>
-
 </html>
-
