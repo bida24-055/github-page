@@ -6,6 +6,110 @@
  
 </head>
 <body>
+  <style>
+    /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Page Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.container h1, .container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+/* Paragraph */
+.container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #273c75;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #192a56;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+  </style>
 
   <header>
     <h1>Contact Me</h1>
