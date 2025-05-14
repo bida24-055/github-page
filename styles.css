@@ -1,40 +1,40 @@
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #273c75;
-}
-
 body {
-margin: 0;
-padding: 0;
-background-image: url(mclaren-p1-exterior.jpg);
-background-size: cover;
-background-position: center;
-font-family: Arial,sans-serif;
-color: beige;
+  margin: 0;
+  padding: 0;
+  background-image: url(mclaren-p1-exterior.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: beige;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
+
+/* Navbar */
 .navbar {
-  background-color: rgba(0,0,0,0.6);
+  background-color: black; /* Changed to solid black */
   padding: 15px;
+  width: 100%;
   text-align: center;
 }
+
 .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-    }
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-    .content {
-      padding: 40px;
-      background-color: rgba(0, 0, 0, 0.5);
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      border-radius: 10px;
-    }
-
+/* Content */
+.content {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
