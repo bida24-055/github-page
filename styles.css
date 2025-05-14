@@ -22,6 +22,29 @@ body {
   text-align: center;
 }
 
+
+.hero {
+  background: url('2025-mclaren-w1.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
 .navbar a {
   color: white;
   margin: 0 15px;
