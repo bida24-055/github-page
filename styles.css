@@ -4,7 +4,6 @@ body {
    background-image: url("2025-mclaren-w1.jpg");
    background-size: cover;
   background-position: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   color: beige;
   display: flex;
@@ -24,7 +23,6 @@ body {
 
 
 .hero {
-  background: url('2025-mclaren-w1.jpg') center/cover no-repeat;
   height: 400px;
   display: flex;
   align-items: center;
@@ -34,6 +32,7 @@ body {
 }
 
 .hero h1 {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
