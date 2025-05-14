@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(mclaren-p1-exterior.jpg);
-  background-size: cover;
+  background-color: grey;
   background-position: center;
   font-family: Arial, sans-serif;
   color: beige;
