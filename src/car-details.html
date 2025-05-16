@@ -23,11 +23,9 @@
   <ul id="car-specs"></ul>
 
   <script>
-    // 1. Parse the URL to get the car ID
     const urlParams = new URLSearchParams(window.location.search);
     const carId = urlParams.get('id');
 
-    // 2. Sample data (can later be loaded from JSON or server)
     const carData = {
       "Honda Civic": {
         title: "2022 Honda Civic",
@@ -60,8 +58,6 @@
         specs: ["Mileage: 20,500 km", "Transmission: Automatic"]
       }
     };
-
-    // 3. Populate HTML with data
     const car = carData[carId];
     if (car) {
       document.getElementById("car-title").textContent = car.title;
