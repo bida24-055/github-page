@@ -5,39 +5,206 @@
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
     <style>
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-      body {
-        background-color: #f5f6fa;
-        color: #2f3640;
-        line-height: 1.6;
-        padding: 20px;
-       }
-      
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-       }
-      
-      header h1 {
-        font-size: 2.5rem;
-        color: #273c75;
-       }
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #273c75;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  min-width: 150px;
+}
+
+/* Inventory Grid */
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Car Card */
+.car-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #192a56;
+}
+
+.car-details p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #353b48;
+}
+
+/* Price Tag */
+.car-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e84118;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #273c75;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #192a56;
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .car-details h3 {
+    font-size: 1rem;
+  }
+
+  .car-price {
+    font-size: 1rem;
+  }
+}   
     </style>
   </head>
   <body>
-    <header>
-      <h1>Browse through our select few cars</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="inventory.html">Inventory</a>
-      </nav>
-    </header>
+    <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+    <!-- Page Header -->
+  <header>
+    <h1>Available Cars</h1>
+  </header>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <select>
+      <option value="">All Makes</option>
+      <option value="Toyota">Toyota</option>
+      <option value="BMW">BMW</option>
+      <option value="Honda">Honda</option>
+    </select>
+
+    <select>
+      <option value="">All Years</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+    </select>
+
+    <input type="text" placeholder="Search by model...">
+  </div>
+
     <main>
-      <p>BMW M5</p>
-    <p>$260 754</p>
-    <img src="M5.jpg" alt="BMW M5" width="300">
+      <!-- Inventory Grid -->
+  <div class="inventory-grid">
+    <!-- Car 1 -->
+    <div class="car-card">
+      <img src="Civic.jpg" alt="Honda Civic" class="car-image">
+      <div class="car-details">
+        <h3>2022 Honda Civic</h3>
+        <p>Mileage: 20,000 km</p>
+        <p>Transmission: Automatic</p>
+        <p class="car-price">$22,000</p>
+        <a href="#" class="button">View Details</a>
+      </div>
+    </div>
+
+     <!-- Car 2 -->
+     <div class="car-card">
+      <img src="public/cars/M5.jpg" alt="BMW M5" class="car-image">
+      <div class="car-details">
+        <h3>2023 BMW M5</h3>
+        <p>Mileage: 10,000 km</p>
+        <p>Transmission: Automatic</p>
+        <p class="car-price">$55,000</p>
+        <a href="#" class="button">View Details</a>
+      </div>
+    </div>
+
+     <!-- Car 3 -->
+     <div class="car-card">
+      <img src="Jeep.jpg" alt="Jeep" class="car-image">
+      <div class="car-details">
+        <h3>2021 Jeep</h3>
+        <p>Mileage: 30,000 km</p>
+        <p>Transmission: Manual</p>
+        <p class="car-price">$17,500</p>
+        <a href="#" class="button">View Details</a>
+      </div>
+    </div>
+    
     </main>
     <footer>
       <p>&copy; 2023 Aobakwe Makuke</p>
