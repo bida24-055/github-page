@@ -1,139 +1,10 @@
 <!DOCTYPE html>
-<html lang=:en">
+<html lang="en">
   <head>
+
     <meta charset="UT-8">
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
-  </head>
-  <body>
-    <style>
-      /* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: #f5f6fa;
-  color: #2f3640;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-/* Header */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #273c75;
-}
-
-/* Filter Bar */
-.filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-
-.filter-bar select,
-.filter-bar input {
-  padding: 10px;
-  border: 1px solid #dcdde1;
-  border-radius: 8px;
-  min-width: 150px;
-}
-
-/* Inventory Grid */
-.inventory-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-/* Car Card */
-.car-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s;
-}
-
-.car-card:hover {
-  transform: translateY(-5px);
-}
-
-.car-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.car-details {
-  padding: 15px;
-}
-
-.car-details h3 {
-  margin-bottom: 8px;
-  font-size: 1.2rem;
-  color: #192a56;
-}
-
-.car-details p {
-  font-size: 0.95rem;
-  margin: 4px 0;
-  color: #353b48;
-}
-
-/* Price Tag */
-.car-price {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #e84118;
-  margin-top: 10px;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #273c75;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover {
-  background-color: #192a56;
-}
-
-/* Responsive Text */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .car-details h3 {
-    font-size: 1rem;
-  }
-
-  .car-price {
-    font-size: 1rem;
-  }
-}
-
-    </style>
-
     <header>
       <h1>Browse through our select few cars</h1>
       <nav>
@@ -143,7 +14,31 @@ header h1 {
   <a href="inventory.html">Inventory</a>
       </nav>
     </header>
+  </head>
+  <body>
+    <style>
+
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+  line-height: 1.6;
+  padding: 20px;
+ }
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+ }
+
+header h1 {
+  font-size: 2.5rem;
+  color: #273c75;
+ }
+    </style>
     <main>
+      <p1>BMW M5</p1>
+    <p2>$260 754</p2>
+    <img src="M5.jpg">
     </main>
     <footer>
       <p>&copy; 2023 Aobakwe Makuke</p>
