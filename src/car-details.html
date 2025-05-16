@@ -2,55 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Car Details | Elite Motors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details</title>
 </head>
 <body>
+  <h1 id="car-title"></h1>
+  <img id="car-image" style="width:300px" />
+  <p id="car-price"></p>
+  <ul id="car-specs"></ul>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="inventory.html">Inventory</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <script>
+    // 1. Parse the URL to get the car ID
+    const urlParams = new URLSearchParams(window.location.search);
+    const carId = urlParams.get('id');
 
-  <!-- Car Details Section -->
-  <div class="container">
-    <h1>2022 Honda Civic</h1>
+    // 2. Sample data (can later be loaded from JSON or server)
+    const carData = {
+      "Honda Civic": {
+        title: "2022 Honda Civic",
+        image: "public/cars/Civic.jpg",
+        price: "$15,000",
+        specs: ["Mileage: 10,000 km", "Transmission: Automatic"]
+      },
+      "BMW M52023": {
+        title: "2023 BMW M5",
+        image: "c:\Users\elmak\OneDrive\Desktop\github-page\public\cars\M5.jpg",
+        price: "$55,000",
+        specs: ["Mileage: 10,000 km", "Transmission: Automatic"]
+      },
+      "Jeep2021": {
+        title: "2021 Jeep",
+        image: "c:\Users\elmak\OneDrive\Desktop\github-page\public\cars\Jeep.jpg",
+        price: "$17,500",
+        specs: ["Mileage: 30,000 km", "Transmission: Manual"]
+      },
+      "Corolla2020": {
+        title: "2020 Toyota Corolla",
+        image: "c:\Users\elmak\OneDrive\Desktop\github-page\public\cars\Corolla.jpg",
+        price: "$15,670",
+        specs: ["Mileage: 10,000 km", "Transmission: Automatic"]
+      },
+      "Audi2018": {
+        title: "2018 Audi A6",
+        image: "c:\Users\elmak\OneDrive\Desktop\github-page\public\cars\Audi A6.jpg",
+        price: "$95,670",
+        specs: ["Mileage: 20,500 km", "Transmission: Automatic"]
+      }
+    };
 
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
-      <!-- Car Image -->
-      <div style="flex: 1; min-width: 300px;">
-        <img src="c:\Users\elmak\OneDrive\Desktop\github-page\public\cars\Civic.jpg" alt="Honda Ciciv" style="width: 100%; border-radius: 10px;" />
-      </div>
+    // 3. Populate HTML with data
+    const car = carData[carId];
+    if (car) {
+      document.getElementById("car-title").textContent = car.title;
+      document.getElementById("car-image").src = car.image;
+      document.getElementById("car-price").textContent = `Price: ${car.price}`;
 
-      <!-- Car Specs -->
-      <div style="flex: 2; min-width: 300px;">
-        <h2>Specifications</h2>
-        <ul style="list-style: none; padding-left: 0; font-size: 16px;">
-          <li><strong>Make:</strong> Honda</li>
-          <li><strong>Model:</strong> Civic</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Mileage:</strong> 25,000 km</li>
-          <li><strong>Transmission:</strong> Automatic</li>
-          <li><strong>Fuel Type:</strong> Petrol</li>
-          <li><strong>Engine:</strong> 2.5L</li>
-          <li><strong>Color:</strong> white</li>
-        </ul>
-        <h3 style="margin-top: 20px;">Price: <span style="color: #e67e22;">$22,500</span></h3>
-
-        <a href="contact.html" class="button" style="margin-top: 20px; display: inline-block;">Book a Test Drive</a>
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer style="text-align: center; padding: 20px; background: #000; color: #fff; margin-top: 50px;">
-    &copy; 2025 Apex Autos. All rights reserved.
-  </footer>
-
+      const specsList = document.getElementById("car-specs");
+      car.specs.forEach(spec => {
+        const li = document.createElement("li");
+        li.textContent = spec;
+        specsList.appendChild(li);
+      });
+    } else {
+      document.getElementById("car-title").textContent = "Car not found!";
+    }
+  </script>
 </body>
 </html>
