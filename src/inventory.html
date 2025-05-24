@@ -19,19 +19,40 @@ body {
   color: #2f3640;
   line-height: 1.6;
   padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
 }
 
-header h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #273c75;
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
 }
 
 /* Filter Bar */
