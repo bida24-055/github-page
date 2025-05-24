@@ -1,112 +1,88 @@
 <!DOCTYPE html>
-<html lang=:en">
-  <head>
-    <meta charset="UT-8">
-    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-
-  </head>
-  <body>
- <style>
-   /* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Autos | About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+.about-section {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
 }
 
-/* Body */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #2c3e50;
-  line-height: 1.6;
-  padding: 20px;
-}
-   
-/* Header */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #273c75;
-}
-   
-/* Navbar */
-.navbar {
-  background-color: #000;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-/* Page Container */
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  background-color: #ffffff;
+.about-section .container {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-/* Headings */
-.container h1, .container h2 {
+.about-section h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #34495e;
 }
 
-/* Paragraph */
-.container p {
-  font-size: 16px;
+.about-section h2 {
+  color: #273c75;
+  margin-top: 20px;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-section p {
   margin-bottom: 15px;
 }
-   
-/* Responsive */
-@media (max-width: 600px) {
-  .container {
-    padding: 20px;
-  }
 
-  .navbar a {
-    display: block;
-    margin: 10px 0;
-  }
-}
+  </style>
+</head>
+<body>
 
- </style>
-    <header>
-      <h1>About Me</h1>
+  <!-- Header -->
+  <header style="text-align: left; padding: 20px; background: white; color: white; margin-top: 30px;">
+    <div class="navbar">
       <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
         <a href="inventory.html">Inventory</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
-    </header>
-    <main>
-      <p>Hi! I'm a beginner wed developer learning how to use GitHuo Pages</p>
-      <p>?This is my first multi page website, and I'm excited to share it with you</p>
-    </main>
-    <!--Footer-->
-    <footer>
-      <footer style="text-align: center; padding: 20px; background: #000; color: #fff; margin-top: 50px;">
-      &copy; 2023 Apex Autos . All rights Reserverd
-    </footer>
-  </body>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <h1>About Apex Autos</h1>
+      <p>At Apex Autos, we’re passionate about helping you find the perfect vehicle. With years of industry expertise, a diverse inventory, and exceptional customer service, we strive to make your car buying experience smooth and enjoyable.</p>
+
+      <h2>Our Mission</h2>
+      <p>To provide high-quality vehicles, personalized service, and trustworthy advice that helps every customer drive away satisfied.</p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Wide selection of new and certified pre-owned vehicles</li>
+        <li>Friendly, knowledgeable sales staff</li>
+        <li>Flexible financing options</li>
+        <li>Comprehensive after-sales support</li>
+      </ul>
+
+      <h2>Visit Us</h2>
+      <p>Come visit our showroom and take your dream car for a test drive. We look forward to meeting you!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Apex Autos. All rights reserved.
+  </footer>
+
+</body>
 </html>
