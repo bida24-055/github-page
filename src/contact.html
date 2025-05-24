@@ -3,125 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
- 
+  <title>Contuct Us- Apex Autos</title>
+   <style>
+  body {
+     font-family:Ariel, Sans-serif;
+    margin:0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+   }
+    .container{
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1,h2,h3{
+      color:#333;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+    label{
+      margin: 10px 0 5px;
+    }
+    input,textarea{
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .info-section {
+      margin-top: 30px;
+    }
+    .info-box {
+      background-color: #eef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+     .navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  background-color: #555;
+  color: white;
+}
+.navbar a.active {
+  background-color: #007bff;
+  color: white;
+}
+@media (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  </style>
 </head>
 <body>
-  <style>
-    /* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ <div class="container">
+  <h1>Contact Us 📞</h1>
+  <form action="submit-inquiry.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-/* Body */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #2c3e50;
-  line-height: 1.6;
-  padding: 20px;
-}
-    
-  /* Header */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-header h1 {
-  font-size: 2.5rem;
-  color: #273c75;
-}
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
 
-/* Navbar */
-.navbar {
-  background-color: #000;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-/* Page Container */
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Headings */
-.container h1, .container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #34495e;
-}
-
-/* Paragraph */
-.container p {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  resize: vertical;
-}
-
-.contact-form button {
-  padding: 12px;
-  background-color: #273c75;
-  color: white;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #192a56;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .container {
-    padding: 20px;
-  }
-
-  .navbar a {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-  </style>
-
+    <button type="submit">Submit Inquiry</button>
+  </form>
+   
+<div class="info-section">
+    <h2>Dealership Location 📍</h2>
+    <div class="info-box">
+      <p><strong>AutoDealer HQ</strong><br>
+      123 Main Street,<br>
+      YourCity, YourCountry</p>
+      <p><a href="https://maps.google.com" target="_blank">View on Map</a></p>
+    </div>
+  <h3>Opening Hours 🕒</h2>
+    <div class="info-box">
+      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+      <p>Saturday: 9:00 AM - 4:00 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+</div>
   <header>
     <h1>Contact Me</h1>
     <nav>
@@ -131,9 +130,6 @@ header h1 {
       <a href="inventory.html">Inventory</a>
     </nav>
   </header>
-  <main>
-    <p>If you'd like to get in touch, feel free to email me <a href="malito:bida24-055@thuto.bac.ac.bw">bida24-055@thuto.bac.ac.bw</a>.</p>
-  </main>
   <!--Footer-->
   <footer>
     <footer style="text-align: center; padding: 20px; background: #000; color: #fff; margin-top: 50px;">
