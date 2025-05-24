@@ -18,11 +18,17 @@
   </style>
 </head>
 <body>
+  <div>
   <h1 id="car-title"></h1>
   <img id="car-image" style="width:300px" />
   <p id="car-price"></p>
   <ul id="car-specs"></ul>
-
+  
+   <!-- Action Buttons -->
+    <a href="book-test-drive.html" class="btn btn-testdrive">Book a Test Drive</a>
+    <a href="reserve-car.html" class="btn btn-reserve">Reserve This Car</a>
+    </div>
+  
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const carId = urlParams.get('id');
