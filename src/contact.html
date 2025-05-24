@@ -4,6 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
   <title>Contuct Us- Apex Autos</title>
+  
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const action = urlParams.get('action');
+  const car = urlParams.get('car');
+
+  if (car) {
+    const messageField = document.getElementById("message");
+    let message = `I would like to `;
+    message += action === "reserve" ? "reserve" : "book a test drive for";
+    message += ` the ${car}.`;
+    messageField.value = message;
+  }
+</script>
+
    <style>
   body {
      font-family:Ariel, Sans-serif;
