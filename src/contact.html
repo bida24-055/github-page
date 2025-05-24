@@ -6,16 +6,36 @@
   <title>Contuct Us- Apex Autos</title>
   
   <script>
+    const carId = urlParams.get('id');
+const car = carData[carId];
+    
+    if (car) {
+  document.getElementById("car-title").textContent = car.title;
+  document.getElementById("car-image").src = car.image;
+  document.getElementById("car-price").textContent = `Price: ${car.price}`;
+
+  const specsList = document.getElementById("car-specs");
+  specsList.innerHTML = "";
+  car.specs.forEach(spec => {
+    const li = document.createElement("li");
+    li.textContent = spec;
+    specsList.appendChild(li);
+  });
+
+  // 💡 Dynamically set button links
+  const encodedCar = encodeURIComponent(carId); // safer for URLs
+  document.getElementById("testdrive-btn").href = `contact.html?action=testdrive&car=${encodedCar}`;
+  document.getElementById("reserve-btn").href = `contact.html?action=reserve&car=${encodedCar}`;
+}
   const urlParams = new URLSearchParams(window.location.search);
   const action = urlParams.get('action');
   const car = urlParams.get('car');
 
-  if (car) {
-    const messageField = document.getElementById("message");
-    let message = `I would like to `;
-    message += action === "reserve" ? "reserve" : "book a test drive for";
-    message += ` the ${car}.`;
-    messageField.value = message;
+  if (car && document.getElementById("message")) {
+    const decodedCar = decodeURIComponent(car);
+    const actionText = action === "reserve" ? "reserve" : "book a test drive for";
+    document.getElementById("message").value = `I would like to ${actionText} the ${decodedCar}.`;
+  }
   }
 </script>
 
