@@ -13,29 +13,36 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Navbar */
-.navbar nav {
+header {
+  background-color: #1f1f1f;
+  color: white;
   display: flex;
-  justify-content: center;
-  background-color: #fff;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
 }
 
-.navbar a {
-  color: black;                /* Default color */
-  text-decoration: none;
-  margin: 0 15px;
+header .logo {
+  font-size: 1.5em;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-.navbar a:hover {
-  color: gray;                 /* Hover color */
+header nav ul {
+  list-style: none;
+  display: flex;
 }
 
-.navbar a.active {
-  color: purple;               /* Active color */
+header nav ul li {
+  margin-left: 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
 }
 
 /* Hero Section */
