@@ -37,7 +37,6 @@ header nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
   background-position: center;
   background-size: cover;
@@ -61,7 +60,6 @@ header nav ul li a.active {
   font-size: 1.2rem;
 }
 
-/* Container Section */
 .container {
   max-width: 1200px;
   margin: 40px auto;
@@ -80,7 +78,6 @@ header nav ul li a.active {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* CTA Section */
 .button {
   background-color: white;
   color: #273c75;
@@ -96,7 +93,6 @@ header nav ul li a.active {
   color: white;
 }
 
-/* Footer */
 footer {
   background-color: #000;
   color: #fff;
@@ -105,7 +101,6 @@ footer {
   margin-top: 30px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
