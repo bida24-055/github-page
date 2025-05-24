@@ -45,8 +45,41 @@ const car = carData[carId];
     margin:0;
     padding: 20px;
     background-color: #f4f4f4;
+   line-height: 1.6;
+  color: #333;
     
    }
+header {
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
+}
     .container{
       max-width: 800px;
       margin: auto;
@@ -91,34 +124,7 @@ const car = carData[carId];
       border-radius: 8px;
       margin-bottom: 15px;
     }
-     .navbar {
-  background-color: #333;
-  overflow: hidden;
-  padding: 10px 20px;
-}
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.navbar a:hover {
-  background-color: #555;
-  color: white;
-}
-.navbar a.active {
-  background-color: #007bff;
-  color: white;
-}
-@media (max-width: 600px) {
-  .navbar a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    
   </style>
 </head>
   <header>
