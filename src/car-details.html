@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Car Details</title>
-  <script src="script.js" defer></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,9 +24,9 @@
   <ul id="car-specs"></ul>
   
    <!-- Action Buttons -->
-    <a href="contact.html" class="btn btn-testdrive">Book a Test Drive</a>
-    <a href="contact.html" class="btn btn-reserve">Reserve This Car</a>
-    </div>
+    <a href="contact.html?action=testdrive&car=Honda%20Civic" class="btn btn-testdrive">Book a Test Drive</a>
+<a href="contact.html?action=reserve&car=Honda%20Civic" class="btn btn-reserve">Reserve This Car</a>
+  </div>
   
   <script>
     const urlParams = new URLSearchParams(window.location.search);
