@@ -64,20 +64,30 @@
         specs: ["Mileage: 20,500 km", "Transmission: Automatic"]
       }
     };
-    const car = carData[carId];
+   const car = carData[carId];
     if (car) {
       document.getElementById("car-title").textContent = car.title;
       document.getElementById("car-image").src = car.image;
       document.getElementById("car-price").textContent = `Price: ${car.price}`;
 
       const specsList = document.getElementById("car-specs");
+      specsList.innerHTML = "";
       car.specs.forEach(spec => {
         const li = document.createElement("li");
         li.textContent = spec;
         specsList.appendChild(li);
       });
+
+      // Dynamically set button links
+      const encodedCar = encodeURIComponent(car.title);
+      document.getElementById("testdrive-btn").href = `contact.html?action=testdrive&car=${encodedCar}`;
+      document.getElementById("reserve-btn").href = `contact.html?action=reserve&car=${encodedCar}`;
     } else {
       document.getElementById("car-title").textContent = "Car not found!";
+      document.getElementById("car-image").style.display = "none";
+      document.getElementById("car-price").textContent = "";
+      document.getElementById("testdrive-btn").style.display = "none";
+      document.getElementById("reserve-btn").style.display = "none";
     }
   </script>
 </body>
